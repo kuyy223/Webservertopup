@@ -1,4 +1,4 @@
-/* ===============================
+hg/* ===============================
    VARIABEL GLOBAL
 ================================ */
 let selectedNominal = "";
@@ -145,8 +145,7 @@ function kirimPesanan() {
     }
 
     fetch("send.php", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
+        method: "POST",fonnte-backend-production-0bf0.up.railway.app/send.php"headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
             game,
             gameId,
