@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>TopUpInAja</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>TopUpInAja</h1>
+    <p>Top Up Game Cepat & Aman</p>
+</header>
+
+<!-- SLIDER BANNER -->
+<section class="slider">
+    <img id="sliderImage" src="img/ff1.jpg" alt="Banner Game">
+</section>
+
+
+<section class="form-section">
+    <label>ID Game</label>
+    <input id="gameId" placeholder="Masukkan ID Game">
+
+    <div id="serverBox">
+        <label>Server</label>
+        <input id="server" placeholder="Opsional">
+    </div>
+
+    <div id="displayNameBox" style="display:none">
+        <label>Display Name Roblox</label>
+        <input id="displayName">
+    </div>
+
+    <label>Pilih Game</label>
+    <select id="game"></select>
+
+    <label>Metode Pembayaran</label>
+    <select id="payment">
+        <option>DANA</option>
+        <option>OVO</option>
+        <option>GOPAY</option>
+        <option>QRIS</option>
+        <option>Transfer Bank</option>
+    </select>
+</section>
+
+<section class="game">
+    <table>
+        <thead>
+            <tr>
+                <th>Nominal</th>
+                <th>Harga</th>
+                <th>Pilih</th>
+            </tr>
+        </thead>
+        <tbody id="nominalBody"></tbody>
+    </table>
+
+    <!-- TOMBOL PESAN -->
+    <button class="order-btn" onclick="kirimPesanan()">
+        📩 Pesan Sekarang
+    </button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
